@@ -26,11 +26,7 @@ app.get('/api/protected', ensureToken, (req, res)=>{
                 data
             });
         }
-        }
     });
-    /*res.json({
-        token:'protected'
-    });*/
 });
 
 function ensureToken(req, res, next){
